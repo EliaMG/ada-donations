@@ -13,3 +13,8 @@ mailing list signups (Crystal/Korica) how does that work?
 collected at a minimum (like an email to contact@adaacademy with info)
 
 /donations
+
+Qs:
+What about using default stripe email to provide tax receipt? pros/cons
+ -Integrated/emailed
+ -Less customizable
