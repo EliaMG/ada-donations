@@ -18,3 +18,7 @@ Qs:
 What about using default stripe email to provide tax receipt? pros/cons
  -Integrated/emailed
  -Less customizable
+
+ Bugs:
+ - does not toggle to hidden dropdown menu on minify (need to see Ada home code)
+ - add favicon (need current Ada favicon)
