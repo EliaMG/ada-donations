@@ -5,6 +5,7 @@ GEM
     daemons (1.2.3)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.0.2)
     eventmachine (1.0.8)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -48,6 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   sinatra (~> 1.4.6)
   sinatra-contrib (~> 1.4.2)
   stripe
