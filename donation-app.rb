@@ -8,6 +8,9 @@ class DonationApp < Sinatra::Base
     erb :index
   end
 
+  post '/charge' do
+  end
+
   # get '/receipt' do
   #   erb :receipt
   # end

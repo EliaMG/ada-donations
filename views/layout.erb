@@ -3,7 +3,6 @@
 <head>
   <title>Donate to Ada Developers Academy</title>
   <meta charset="utf-8">
-  <script src="./javascripts/jquery-2.1.4.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -47,10 +46,10 @@
     <%= yield %>
   </div>
 
-  <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type=text/javascript src="{{url_for('assets', filename='javascripts/jquery.creditCardValidator.js') }}"></script>
-  <script type=text/javascript src="{{url_for('assets', filename='javascripts/app.js') }}"></script>
-  <script type=text/javascript>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- <script type=text/javascript src="{{url_for('assets', filename='javascripts/jquery.creditCardValidator.js') }}"></script> -->
+  <!-- <script type=text/javascript src="./javascripts/app.js"></script> -->
+  <!-- <script type=text/javascript>
     $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
   </script> -->
 </body>
