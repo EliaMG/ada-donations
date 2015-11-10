@@ -994,10 +994,10 @@ input[type="email"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeh
   background-size: cover;
   width: 157px;
   height: 32px;
-  background: url(/static/images/brand-logo.svg) 0 0 no-repeat; }
+  background: url(../images/brand-logo.svg) 0 0 no-repeat; }
 
 .no-svg .brand-logo {
-  background: url(/static/images/brand-logo.57b92691872c18068dac5534de200d2a.png) 0 0 no-repeat; }
+  background: url(../images/brand-logo.57b92691872c18068dac5534de200d2a.png) 0 0 no-repeat; }
 
 @media screen and (min-width: 56.875em) {
   .brand-logo {
@@ -1118,7 +1118,7 @@ input[type="email"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeh
 .nav-toggle {
   width: 32px;
   height: 32px;
-  background: url(../images/icons/icon-menu.svg) 0 0 no-repeat;
+  background: url(../images/menu-alt.svg) 0 0 no-repeat;
   background-size: cover;
   position: absolute;
   right: 0;
