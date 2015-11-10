@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donate to Ada Developers Academy</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./assets/stylesheets/application.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./assets/stylesheets/layout.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <i class='glyphicon'></i>
+  <header role="banner">
+    <div class="l-container">
+
+      <div class="brand">
+        <a class="brand-logo" href="http://adadevelopersacademy.org/">Ada Developers Academy</a>
+      </div>
+
+      <div class="nav-wrapper">
+        <nav class="nav-collapse closed" role="navigation" aria-hidden="false" style="-webkit-transition: max-height 250ms; transition: max-height 250ms; position: relative;">
+          <ul class="nav--main">
+            <li><a href="http://adadevelopersacademy.org/about">About</a></li>
+            <li><a href="http://adadevelopersacademy.org/applicants">For Applicants</a></li>
+            <li><a href="http://adadevelopersacademy.org/companies">For Companies</a></li>
+            <li><a href="http://application.adadevelopersacademy.org/">Apply</a></li>
+            <li><a href="http://adadevacademy.tumblr.com/">Blog</a></li>
+          </ul>
+      </nav><a href="#" class="nav-toggle" aria-hidden="true">Menu</a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <div class='container'>
+    <%= yield %>
+  </div>
+
+  <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type=text/javascript src="{{url_for('assets', filename='javascripts/jquery.creditCardValidator.js') }}"></script>
+  <script type=text/javascript src="{{url_for('assets', filename='javascripts/app.js') }}"></script>
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script> -->
+</body>
+</html>
