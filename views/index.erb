@@ -80,9 +80,9 @@ to the extent allowable by law.</small>
           </div>
         </div>
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-         data-key="<%= settings.publishable_key %>"
+         data-key="<%= ENV['TEST_PUBLISH'] %>"
          data-description="Ada Developers Academy Donation"
-         data-amount= "<%= params[:customer_amount] * 100 %>"
+         data-amount= "500"
          data-locale="auto"></script>
       <button class='btn btn-primary btn-lg btn-block submit-donation' type="submit" disabled="disabled">Submit Donation</button>
 
