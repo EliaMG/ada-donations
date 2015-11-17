@@ -20,6 +20,5 @@ thin start
 
 ### To-Do
 - Secure page
-- Add Favicon
-- Fix Collapsed header
+- Bootstrap loading jquery failing
 - Send the link to TSNE to see if they can do a redirect back to Ada's site
