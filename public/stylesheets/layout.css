@@ -102,3 +102,11 @@ input[type=text].cust-amount {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.check-name {
+  font-size: 1.2rem;
+}
+
+.donate-quote {
+  margin-top: 60px;
+}
