@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="/favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <!-- Serve jQuery from Google CDN with local fallback -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -37,17 +40,11 @@
           </ul>
         </nav>
       </div>
-
     </div>
   </header>
 
   <div class='container'>
     <%= yield %>
   </div>
-
-  <!-- Serve jQuery from Google CDN with local fallback -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
 </body>
 </html>

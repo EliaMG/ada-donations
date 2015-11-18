@@ -19,6 +19,4 @@ thin start
 1. The donation button is set up through TSNE using paypal, any edits to the paypal workflow will need to be done on TSNE's end.
 
 ### To-Do
-- Secure page
-- Bootstrap loading jquery failing
-- Send the link to TSNE to see if they can do a redirect back to Ada's site
+- Secure page(?)
