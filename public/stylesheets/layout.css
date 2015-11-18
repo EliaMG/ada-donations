@@ -59,6 +59,7 @@ blockquote p:after {
 .btn-primary {
   background-color: #4c868f;
   border-color: #4c868f;
+  background-image: none;
 }
 
 .btn-primary:hover {
@@ -90,4 +91,22 @@ input[type=text].cust-amount {
 
 .form-group {
   margin-bottom: 10px;
+}
+
+.send-check {
+  margin-top: 20px;
+}
+
+.check-header {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.check-name {
+  font-size: 1.2rem;
+}
+
+.donate-quote {
+  margin-top: 60px;
 }

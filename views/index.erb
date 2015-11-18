@@ -5,29 +5,12 @@
       Ada Developers Academy is a non-profit, tuition-free programming school for women. Thank you for your tax-deductible support toward addressing diversity in Seattle’s tech community.
     </p>
 
-    <blockquote>
+    <blockquote class=donate-quote>
       <p>Ada provides opportunities for people who would be great software developers, but otherwise not be able to, because of lack of resources and instruction.</p>
       <cite><strong>Christina Thompson</strong>, Ada Student</cite>
     </blockquote>
-
-    <h3>Want to send a check?</h3>
-    <ul>
-      <li>Please make payable to:</li>
-      <li>TSNE/Ada Developers Academy</li>
-    </ul>
-    <p></p>
-    <ul>
-      <li>Mailing address:</li>
-      <li>Third Sector New England, Inc.</li>
-      <li>ATTN: Andrew Cox-Stavros</li>
-      <li>Chief Financial Officer</li>
-      <li> 89 South Street, Suite 700</li>
-      <li>Boston, MA 02111-2670</li>
-    </ul>
-    <small>Third Sector New England is recognized by the Internal Revenue Service as a tax-exempt, 501(c)(3)
-organization and donations to TSNE, Federal ID number 04-2261109, are tax-deductible contributions
-to the extent allowable by law.</small>
   </div>
+
   <div class='col-lg-6 '>
 
     <div class="heading">
@@ -36,56 +19,29 @@ to the extent allowable by law.</small>
       <h2>Contribute Today</h2>
     </div>
 
-    <form action="/charge" method="POST" role='form' class="form-horizontal" id="payment-form">
-      <div class="form-group">
-        <label class="col-lg-2 sr-only">Amount:</label>
-        <div class='col-lg-11'>
-          <input type="text" size="10" placeholder="$ Donation Amount" class='cust-amount form-control input-lg' name="customer_amount" value=""/>
-        </div>
-      </div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+       <input type="hidden" name="cmd" value="_s-xclick">
+       <input type="hidden" name="hosted_button_id" value="BAR6EVVZECH78">
+       <input type="hidden" name="return" value="https://donate.adadevelopersacademy.org/thanks">
+       <input type="hidden" name="cancel_return" value="https://donate.adadevelopersacademy.org/">
+       <button class='btn btn-primary btn-lg btn-block submit-donation' type="submit" name="submit">Donate Now</button>
+     </form>
 
-        <label>You</label>
-        <div class="form-group">
-          <label class="sr-only">Name:</label>
-          <div class='col-lg-6'>
-            <input type="text" size="25" placeholder="Name" class='cust-name form-control input-sm' name="customer_name" value="" />
-            <small class="help-block">Leave blank to remain anonymous</small>
-          </div>
-          <label class="sr-only">Email:</label>
-          <div class='col-lg-6'>
-            <input type="text" size="20" placeholder="Email" data-validate="true" class='cust-email form-control input-sm' value="" name="customer_email"/>
-          </div>
-        </div>
-        <label class='credit-card'>Credit Card <i class="text-success card-type-icon fa"></i></label>
-        <div class="form-group">
-
-          <div class='col-lg-8'>
-            <input type="text" size="20" placeholder="Card Number" class='card-number form-control input-sm' name="card[number]" value=""/>
-            <input type="hidden" class='card-type' name="card[type]" value=""/>
-          </div>
-          <label class="sr-only">CVC:</label>
-          <div class='col-lg-4'>
-            <input type="text" size="4" placeholder="Security Code" class='card-cvc form-control input-sm' value="" name=card[cvc] data-stripe="cvc"/>
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class='sr-only'>Expiration:</label>
-          <div class='col-sm-6'>
-            <input type="text" size="2" placeholder="MM" class='card-expiry-month form-control col-lg-4 input-sm' name=card[month] value=""/>
-          </div>
-          <div class='col-sm-6'>
-            <input type="text" size="4" placeholder="YYYY" class='card-expiry-year form-control col-lg-4 input-sm' name=card[year] value=""/>
-          </div>
-        </div>
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-         data-key="<%= ENV['TEST_PUBLISH'] %>"
-         data-description="Ada Developers Academy Donation"
-         data-amount= "500"
-         data-locale="auto"></script>
-      <button class='btn btn-primary btn-lg btn-block submit-donation' type="submit" disabled="disabled">Submit Donation</button>
-
-    </form>
+    <div class="send-check">
+      <h3>Want to send a check?</h3>
+      <ul>
+        <li class='check-header'>Please make payable to:</li>
+        <li class='check-name'>TSNE/Ada Developers Academy</li>
+      <ul>
+        <li class='check-header'>Mailing address:</li>
+        <li>Third Sector New England, Inc.</li>
+        <li>ATTN: Andrew Cox-Stavros</li>
+        <li>Chief Financial Officer</li>
+        <li> 89 South Street, Suite 700</li>
+        <li>Boston, MA 02111-2670</li>
+      </ul>
+      <br/>
+        <p> Donations are processed through Ada's 501(c)(3) fiscal sponsor, Third Sector New England (TSNE). Ada donations through TSNE, Federal ID number 04-2261109, are tax-deductible to the extent allowable by law.</p>
+    </div>
   </div>
 </div>
