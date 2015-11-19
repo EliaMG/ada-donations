@@ -11,10 +11,15 @@ gem install bundler
 ```
 bundle install
 ```
+1. Puma is installed as the default, so to start the server, run
+```
+rackup
+```
 1. To simply test the site locally, run thin server. To see changes made to SCSS, you must restart the server
 ```
 thin start
 ```
+
 ### Payment Notes
 1. The donation button is set up through TSNE using paypal, any edits to the paypal workflow will need to be done on TSNE's end.
 
